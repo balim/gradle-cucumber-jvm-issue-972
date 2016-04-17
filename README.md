@@ -3,6 +3,10 @@
 The problem only happens on windows (produced on Windows 7):
 
 ```
+git clone https://github.com/mrduguo/gradle-cucumber-jvm-issue-972.git
+
+cd gradle-cucumber-jvm-issue-972
+
 ./gradlew
 
 ```

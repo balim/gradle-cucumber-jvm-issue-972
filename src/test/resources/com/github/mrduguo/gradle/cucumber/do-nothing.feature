@@ -1,9 +1,12 @@
 Feature: A sample to demo cucumber scenario outline sample value
   will cause test report fail in gradle
 
-  Scenario Outline:
-    Given Do Nothing with <address> and <result>
+  Scenario Outline: execute test from examples
+    Given Do Nothing with <address> and <source>
     Examples:
-      | address                   | result  |
-      | localhost                 | success |
-      | 127.0.0.1                 | success |
+      | address                   | source  |
+      | localhost                 | examples |
+      | examples                 | local.xip.io |
+
+  Scenario: execute test from scenario | 127.0.0.1 | scenario |
+    Given Do Nothing with 127.0.0.1 and scenario
